@@ -1,3 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-bar-header{
+    background-color: rgb(54, 16, 70);
+    height: 100px;
+    align-self: center;
+    display: flex;
+}
+
 .title-h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-left: 50px;
+    
+}
+
+.nav-bar-header{
+    display: flex;
+    grid-row: auto;
+}
+
+nav ul {
+  display: flex; /* Alinha os itens (li) em linha */
+  list-style: none; /* Remove bolinhas da lista */
+  margin-left: 750px;
+
+
+
+}
+nav ul li {
+  margin: 0 15px; /* Espaçamento entre os links */
+  
+  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }

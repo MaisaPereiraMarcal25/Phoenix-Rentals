@@ -1,47 +1,50 @@
 body{
-    margin: 0;
+    margin: 20px;
     padding: 0;
-
+    padding-top: 100px; /* espaço para navbar fixa */
 }
 
 .nav-bar-header{
     background-color: rgb(54, 16, 70);
     height: 100px;
-    align-self: center;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 50px;
 }
 
 .title-h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
     color: rgb(255, 255, 255);
-    padding: 10px;
-    margin-left: 50px;
-    
+    margin: 0;
+    padding: 0;
 }
 
-.nav-bar-header{
-    display: flex;
-    grid-row: auto;
+nav {
+    margin-left: auto;
 }
 
 nav ul {
-  display: flex; /* Alinha os itens (li) em linha */
-  list-style: none; /* Remove bolinhas da lista */
-    padding: 23px;
-    margin-left: 800px;
-
-
-
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
 }
+
 nav ul li {
-  margin: 0 15px; /* Espaçamento entre os links */
-  
-  
+  margin: 0;
 }
 
 a{
+    font-size: 20px;
     text-decoration: none;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }

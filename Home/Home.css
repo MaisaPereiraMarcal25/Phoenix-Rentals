@@ -21,6 +21,7 @@ h2{
     right: 0;
     z-index: 1000;
     padding: 0 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.337);
 }
 
 .title-h1{
@@ -52,4 +53,22 @@ a{
     text-decoration: none;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.container-Agendamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.teste{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }

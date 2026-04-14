@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento de Notebooks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Agendamento.css">
+</head>
+<body>
+  <div class="nav-bar-header">
+    <h1 class="title-h1">Agendamento</h1>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="../Home.html">Início</a></li>
+        <li><a href="../Feedbacks/Feedback.html">Feedbacks</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="container">
+    <section class="page-header">
+      <h2>Agendar notebook</h2>
+      <p>Registre um horário e descreva o problema para manutenção.</p>
+    </section>
+
+    <section class="card">
+      <form id="scheduleForm">
+        <label for="scheduleNotebook">Notebook</label>
+        <select id="scheduleNotebook" required>
+          <option value="Notebook 1">Notebook 1</option>
+          <option value="Notebook 2">Notebook 2</option>
+          <option value="Notebook 3">Notebook 3</option>
+        </select>
+
+        <label for="scheduleDate">Data preferida</label>
+        <input type="date" id="scheduleDate" required>
+
+        <label for="scheduleTime">Hora</label>
+        <input type="time" id="scheduleTime" required>
+
+        <label for="scheduleDetails">Descrição do problema</label>
+        <textarea id="scheduleDetails" rows="4" placeholder="Ex: Está com problema na hora de ligar..." required></textarea>
+
+        <button type="submit" class="btn-primary">Agendar</button>
+      </form>
+    </section>
+
+    <section class="card history-card">
+      <h3>Agendamentos</h3>
+      <ul id="scheduleList" class="history-list"></ul>
+    </section>
+  </main>
+
+  <script src="Agendamento.js"></script>
+</body>
+</html>

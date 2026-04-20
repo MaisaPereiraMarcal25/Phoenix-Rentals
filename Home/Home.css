@@ -1,11 +1,16 @@
 body{
-    margin: 20px;
+    margin: 0px;
     padding: 0;
     padding-top: 100px; /* espaço para navbar fixa */
 }
 
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
 .nav-bar-header{
-    background-color: rgb(54, 16, 70);
+    background: linear-gradient(135deg, rgb(54, 16, 70) 0%, rgb(98, 35, 119) 100%);
     height: 100px;
     display: flex;
     align-items: center;
@@ -16,11 +21,13 @@ body{
     right: 0;
     z-index: 1000;
     padding: 0 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.337);
 }
 
 .title-h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
+    font-weight: 500;
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
@@ -47,4 +54,51 @@ a{
     text-decoration: none;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.container-Agendamento{
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 20px 30px;
+    background-color: #f0f0f0;
+}
+
+.cards-row{
+    display: flex;
+    flex-wrap: row;
+    gap: 60px;
+    justify-content: row;
+    margin-top: 75px;
+    text-align: center;
+}
+
+.shadow-containerProduto{
+    flex: 0 1 320px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@media (max-width: 860px) {
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shadow-containerProduto {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.imageProduct {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback de Notebooks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Feedback.css">
+</head>
+<body>
+    <div class="nav-bar-header">
+      <a href="../Home.html"><h1 class="title-h1">Jagunço.™</h1></a>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Agendar</a></li>
+          <li><a href="./Feedbacks/Feedback.html">Ajuda</a></li>
+          <li><a href="#">Perfil</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  <main class="container">
+    <section class="page-header">
+      <h2>Enviar feedback</h2>
+      <p>Informe o notebook e descreva o problema encontrado.</p>
+    </section>
+
+    <section class="card">
+      <form id="feedbackForm">
+        <label for="feedbackNotebook">Notebook</label>
+        <select id="feedbackNotebook" required>
+          <option value="Notebook 1">Notebook 1</option>
+          <option value="Notebook 2">Notebook 2</option>
+          <option value="Notebook 3">Notebook 3</option>
+        </select>
+
+        <label for="feedbackType">Tipo de problema</label>
+        <select id="feedbackType" required>
+          <option value="Mal funcionamento">Mal funcionamento</option>
+          <option value="Problema ao ligar">Problema ao ligar</option>
+          <option value="Tela">Tela</option>
+          <option value="Bateria">Bateria</option>
+          <option value="Outros">Outros</option>
+        </select>
+
+        <label for="feedbackMessage">Detalhes do feedback</label>
+        <textarea id="feedbackMessage" rows="4" placeholder="Ex: Está com problema na hora de ligar etc..." required></textarea>
+
+        <button type="submit" class="btn-primary">Enviar feedback</button>
+      </form>
+    </section>
+
+    <section class="card history-card">
+      <h3>Feedbacks enviados</h3>
+      <ul id="feedbackList" class="history-list"></ul>
+    </section>
+  </main>
+
+  <script src="Feedback.js"></script>
+</body>
+</html>
